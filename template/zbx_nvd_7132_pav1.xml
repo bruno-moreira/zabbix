@@ -73,11 +73,11 @@
                 <item>
                     <name>CAM 18</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.21.87,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -87,11 +87,11 @@
                 <item>
                     <name>CAM 16</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.21.186,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -101,11 +101,11 @@
                 <item>
                     <name>CAM 01</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.1,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <inventory_link>TYPE_FULL</inventory_link>
                     <applications>
                         <application>
@@ -116,11 +116,11 @@
                 <item>
                     <name>CAM 03</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.21,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -130,11 +130,11 @@
                 <item>
                     <name>CAM 26</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.23,37777]</key>
+                    <key>net.tcp.service[tcp,1"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -144,11 +144,11 @@
                 <item>
                     <name>CAM 20</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.24,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -158,11 +158,11 @@
                 <item>
                     <name>CAM 21</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.25,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -172,11 +172,11 @@
                 <item>
                     <name>CAM 22</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.26,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -186,11 +186,11 @@
                 <item>
                     <name>CAM 02</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.29,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -200,11 +200,11 @@
                 <item>
                     <name>CAM 27</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.32,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -214,11 +214,11 @@
                 <item>
                     <name>CAM 24</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.34,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -228,11 +228,11 @@
                 <item>
                     <name>CAM 06</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.41,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -242,11 +242,11 @@
                 <item>
                     <name>CAM 25</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.85,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -256,7 +256,7 @@
                 <item>
                     <name>CAM 13</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.86,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
                     <username>admin</username>
@@ -270,11 +270,11 @@
                 <item>
                     <name>CAM 05</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.87,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -284,11 +284,11 @@
                 <item>
                     <name>CAM 04</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.88,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -298,11 +298,11 @@
                 <item>
                     <name>CAM 17</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.89,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -312,11 +312,11 @@
                 <item>
                     <name>CAM 09</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.90,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -326,11 +326,11 @@
                 <item>
                     <name>CAM 10</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.91,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -340,11 +340,11 @@
                 <item>
                     <name>CAM 15</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.92,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -354,12 +354,12 @@
                 <item>
                     <name>CAM 14</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.93,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <value_type>FLOAT</value_type>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -369,11 +369,11 @@
                 <item>
                     <name>CAM 12</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.94,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -383,11 +383,11 @@
                 <item>
                     <name>CAM 11</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.95,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -397,11 +397,11 @@
                 <item>
                     <name>CAM 07</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.96,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -411,11 +411,11 @@
                 <item>
                     <name>CAM 08</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.97,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <<username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -425,11 +425,11 @@
                 <item>
                     <name>CAM 19</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.122,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -439,7 +439,7 @@
                 <item>
                     <name>CAM 23</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.124,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
                     <username>admin</username>
@@ -453,11 +453,11 @@
                 <item>
                     <name>CAM 29</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.127,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -467,11 +467,11 @@
                 <item>
                     <name>CAM 28</name>
                     <type>SIMPLE</type>
-                    <key>net.tcp.service[tcp,10.107.70.129,37777]</key>
+                    <key>net.tcp.service[tcp,"IP Camera",37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
@@ -484,8 +484,8 @@
                     <key>net.tcp.service[tcp,192.168.0.0,37777]</key>
                     <delay>600s</delay>
                     <units>s</units>
-                    <username>admin</username>
-                    <password>Dass5001</password>
+                    <username>user</username>
+                    <password>pass</password>
                     <applications>
                         <application>
                             <name>Cameras</name>
