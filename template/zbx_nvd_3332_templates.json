@@ -1,0 +1,913 @@
+{
+    "zabbix_export": {
+        "version": "6.0",
+        "date": "2023-10-10T17:50:52Z",
+        "groups": [
+            {
+                "uuid": "85f58a4815cb490cb618529305026630",
+                "name": "templates/DVR"
+            }
+        ],
+        "templates": [
+            {
+                "uuid": "da366a798134466f8c07f1f441c951ce",
+                "template": "Template SNMP DVR Intelbras NVD 3332",
+                "name": "Template SNMP DVR Intelbras NVD 3332",
+                "groups": [
+                    {
+                        "name": "templates/DVR"
+                    }
+                ],
+                "items": [
+                    {
+                        "uuid": "9b941957565648a1a87fc6d4011e4fd9",
+                        "name": "Firmware",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": ".1.3.6.1.4.1.1004849.2.1.2.5.0",
+                        "key": ".1.3.6.1.4.1.1004849.2.1.2.5.0",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Informacoes de sistema"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "2acc32b2d26d4cd2b76ae00b1ab10d6a",
+                        "name": "Modelo DVR",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": ".1.3.6.1.4.1.1004849.2.1.2.6.0",
+                        "key": ".1.3.6.1.4.1.1004849.2.1.2.6.0",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "CHAR",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Informacoes de sistema"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "4eb42e916e2e4a6eb9dc7ad8f8f7fec8",
+                        "name": "IP do equipamento",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": ".1.3.6.1.4.1.1004849.2.2.2.8.0",
+                        "key": ".1.3.6.1.4.1.1004849.2.2.2.8.0",
+                        "delay": "1s",
+                        "trends": "0",
+                        "value_type": "CHAR",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Informacoes de sistema"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "9aef9ba4b96a4f45bc1326b23b4bdcdf",
+                        "name": "CAM 01",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.1",
+                        "key": "CANAL1",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "52b0192206f74f7ab1033540d21eef9b",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL1)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "328b7cbe77d0463897ae0d2dba6f47c9",
+                        "name": "CAM 02",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.2",
+                        "key": "CANAL2",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "3ce29044539b47819bf52415a2eaab6d",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL2)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "7421181549ab4e11b7a8b36134217f7c",
+                        "name": "CAM 03",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.3",
+                        "key": "CANAL3",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "8141748f788a4be9898ba72f6139f6dc",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL3)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "392ab828f3d94518970a3be6c489ca81",
+                        "name": "CAM 04",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.4",
+                        "key": "CANAL4",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "73ce50db42bf49e08bba533ad246fe88",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL4)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "4a02abb60dd84066ba70d6820399b86e",
+                        "name": "CAM 05",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.5",
+                        "key": "CANAL5",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "48d8cc99e5e7406eaba0eeef6a1cc303",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL5)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "0cc5afc4138e436d945aba4839e6e20e",
+                        "name": "CAM 06",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.6",
+                        "key": "CANAL6",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "f66b0e060b5b46a597644bb30462eeac",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL6)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "5104487e541c496ba1ec59d75a3cc32b",
+                        "name": "CAM 07",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.7",
+                        "key": "CANAL7",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "45970239619441e7a3833fd48973e928",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL7)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "049e734ab8e5473c91d004e833714fe7",
+                        "name": "CAM 08",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.8",
+                        "key": "CANAL8",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "52fb5d46079b4bd0a4557de3ffbb8678",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL8)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "b0d87fec62d045a995a419cfc8eb575e",
+                        "name": "CAM 09",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.9",
+                        "key": "CANAL9",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "edc33a2932bf4b3fbdbee6331637a71f",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL9)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "8ac111c49fb04ad0977ba455dec29d4a",
+                        "name": "CAM 10",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.10",
+                        "key": "CANAL10",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "993e363d6a9d45239dc8bb3749068ae8",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL10)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "44e22055871f454999caa32514bfc718",
+                        "name": "CAM 11",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.11",
+                        "key": "CANAL11",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "5b0066473d364411b4299c48223cba4a",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL11)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "3ced7f4ac48d4c6bb50f28e754e6cbb4",
+                        "name": "CAM 12",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.12",
+                        "key": "CANAL12",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "LOG",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "e0d0df95f3254385b6e0a492f2159fcf",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL12)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "60c4108dcb394ea3abc54a38657f2fe1",
+                        "name": "CAM 13",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.13",
+                        "key": "CANAL13",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "b2097d0354f64386b7ff7965a76f7fe7",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL13)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "d1314bd645de4fb9b055886c296d1ca5",
+                        "name": "CAM 14",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.14",
+                        "key": "CANAL14",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "e37f3af660f243749f7cde677d95af9c",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL14)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "fdb462a9a36b48ca9feb5c11d0c16d76",
+                        "name": "CAM 15",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.15",
+                        "key": "CANAL15",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "cd85a64be7ef42dfa69b0478773eb8fc",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL15)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "bd758b6adbad4bd3b91921da5b1c7494",
+                        "name": "CAM 16",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.16",
+                        "key": "CANAL16",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "c74b8aee56da44f7aee5b88ca8a5daf4",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL16)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "adf58ff5b89e4b5cb406bc49c2f5ec99",
+                        "name": "CAM 17",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.17",
+                        "key": "CANAL17",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "99008ec3967a45099fd9d84f86a7b574",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL17)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "dec9363dbc604a0c9951f3c415ef3d9b",
+                        "name": "CAM 18",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.18",
+                        "key": "CANAL18",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "a0f372f5286a4bb3bc5f13c4a3e514b5",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL18)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "b489b58b9a10419f9ecbfc60647b880c",
+                        "name": "CAM 19",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.19",
+                        "key": "CANAL19",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "d00775d72989425f973a13974d1ae325",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL19)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "27880ede06cb4a3a8e463f58edd0d22c",
+                        "name": "CAM 20",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.20",
+                        "key": "CANAL20",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "e5196f61e490493b9859ec6c119b56ca",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL20)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "1630c25738ca4e18bb21b86092c71c93",
+                        "name": "CAM 21",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.21",
+                        "key": "CANAL21",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "a4c108b9ca1c46499bb3410d593712a4",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL21)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "a766d997a3e94f9a9fd038bf2b30eb52",
+                        "name": "CAM 22",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.22",
+                        "key": "CANAL22",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "3fe4aef9e0ac46d59434bb8e75f598d1",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL22)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "306709ada6ce437fa26786e7d92f6d4d",
+                        "name": "CAM 23",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.23",
+                        "key": "CANAL23",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "3a9e5a4d03494191ac415219fc169d7e",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL23)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "45da2d1f6f0f4b8e98f22a2d491b18b4",
+                        "name": "CAM 24",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.24",
+                        "key": "CANAL24",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "9f5edc28180d41d59683a52bc23a99af",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL24)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "80439bf21997496895ae0edefb07f690",
+                        "name": "CAM 25",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.25",
+                        "key": "CANAL25",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "910b3d7499bf4e88b51edb8b8a3fc7cc",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL25)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "3afb8a515c86469882b20c6bdab864db",
+                        "name": "CAM 26",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.26",
+                        "key": "CANAL26",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "e0e2c4d0e05f4a39825a8c3c9fa3392f",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL26)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "9ec3d3886bc847ee9ad65919d614ec98",
+                        "name": "CAM 27",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.27",
+                        "key": "CANAL27",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "6ef2e24f7e134efd87886ab5a3660a62",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL27)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "8e307543742643d4bcc33206ec2b14eb",
+                        "name": "CAM 28",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.28",
+                        "key": "CANAL28",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "2135d347e852475481fb39f74c5068ea",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL28)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "b42ef202b28648f7a368ba2f7f870887",
+                        "name": "CAM 29",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.29",
+                        "key": "CANAL29",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "8553a4ab87ba40769b265f299947b17c",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL29)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "fe8dfaca011f4b6fa212cdb577fd3fa0",
+                        "name": "CAM 30",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.30",
+                        "key": "CANAL30",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "2ac6fd1ef06f4b3bb1f189f296d575a6",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL30)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "f0fda712a02041f5b350688bd303d488",
+                        "name": "CAM 31",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.31",
+                        "key": "CANAL31",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "adce77e9cc6944c4bef0c3b8bd6a4cd8",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL31)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "27393e18029c427b9ca5680ab418fc63",
+                        "name": "CAM 32",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": "INTELBRAS-SNMP-MIB::remoteDeviceStatus.32",
+                        "key": "CANAL32",
+                        "delay": "600s",
+                        "trends": "0",
+                        "value_type": "TEXT",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Cameras"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "10e3fe4c8aac41c0b1806717e5f3824b",
+                                "expression": "last(/Template SNMP DVR Intelbras NVD 3332/CANAL32)=0",
+                                "name": "{HOSTNAME}:C\u00e2meras desconectadas",
+                                "opdata": "Unconnect",
+                                "priority": "DISASTER"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "aaeb80db3e8a4f3b97733d734e9b70f1",
+                        "name": "Tempo Ligado do Equipamento",
+                        "type": "SNMP_AGENT",
+                        "snmp_oid": ".1.3.6.1.2.1.1.3.0",
+                        "key": "sysUpTimeInstance",
+                        "delay": "600s",
+                        "units": "uptime",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "0.01"
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "Informacoes de Disponibilidade"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "graphs": [
+            {
+                "uuid": "f059a2e5cb0d40939cd6e92668d1d60e",
+                "name": "01 - Tempo ligado",
+                "graph_items": [
+                    {
+                        "drawtype": "FILLED_REGION",
+                        "color": "0040FF",
+                        "item": {
+                            "host": "Template SNMP DVR Intelbras NVD 3332",
+                            "key": "sysUpTimeInstance"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
